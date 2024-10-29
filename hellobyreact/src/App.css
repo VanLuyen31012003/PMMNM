@@ -1,0 +1,76 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Màu nền đen */
+  color: #fff; /* Màu chữ trắng */
+  margin: 0;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #333; /* Màu nền cho thanh điều hướng */
+  padding: 10px;
+  text-align: center; /* Căn giữa nội dung trong thanh điều hướng */
+  position: fixed; /* Đặt thanh điều hướng ở đầu trang */
+  width: 100%; /* Đảm bảo thanh điều hướng chiếm toàn bộ chiều rộng */
+  top: 0; /* Đặt ở vị trí trên cùng */
+  z-index: 1000; /* Đảm bảo thanh điều hướng luôn nằm trên các nội dung khác */
+}
+
+h1 {
+  text-align: center;
+  color: #fff; /* Màu chữ trắng */
+  /* margin-top: 100px; Khoảng cách từ thanh điều hướng */
+}
+h2{
+  background-color: #4CAF50; /* Màu xanh lá cây */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049; /* Màu xanh đậm hơn khi hover */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Tạo các cột động */
+  gap: 15px; /* Khoảng cách giữa các ô */
+  padding: 20px;
+  margin-top: 20px; /* Khoảng cách trên */
+}
+
+.grid-item {
+  background-color: #222; /* Màu nền ô bài hát */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  align-items: center; /* Căn giữa các nội dung */
+}
+
+.grid-item img {
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng */
+  border-radius: 5px;
+}
+
+.song-title {
+  font-weight: bold;
+  font-size: 1.2em; /* Kích thước chữ lớn hơn */
+  margin: 10px 0 5px; /* Khoảng cách trên và dưới */
+}
+
+.song-description {
+  color: #ccc; /* Màu xám nhạt cho mô tả */
+  text-align: center; /* Căn giữa mô tả */
+}
